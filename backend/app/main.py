@@ -42,6 +42,13 @@ FRONTEND_ORIGINS = [
     "http://127.0.0.1:5173",
 ]
 
+# In production, set FRONTEND_URL to your deployed frontend's URL (e.g.
+# https://your-app.vercel.app) as an environment variable on Render.
+# Local dev origins above still work either way, so this is purely additive.
+_extra_origin = os.getenv("FRONTEND_URL")
+if _extra_origin:
+    FRONTEND_ORIGINS.append(_extra_origin)
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=FRONTEND_ORIGINS,
