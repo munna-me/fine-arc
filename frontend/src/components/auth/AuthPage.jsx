@@ -128,7 +128,7 @@ export default function AuthPage({ theme = 'dark' }) {
         transition={{ duration: 0.35, ease: 'easeOut' }}
       >
         <div className="auth-brand">
-          <img src="/finearc-logo.png" alt="Fine Arc" className="auth-logo" />
+          <img src="/newlogo.png" alt="Fine Arc" className="auth-logo" />
           <span>Numerical Methods Studio</span>
         </div>
 
