@@ -122,9 +122,6 @@ Then run:
 python -m uvicorn app.main:app --reload --port 8000
 ```
 
-The API is live at http://localhost:8000 — interactive docs at
-http://localhost:8000/docs.
-
 ### Frontend
 
 ```bash
