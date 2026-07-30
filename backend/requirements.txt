@@ -1,0 +1,28 @@
+# Core API
+fastapi==0.139.0
+uvicorn==0.50.2
+pydantic==2.13.4
+python-multipart==0.0.32
+
+# Solvers / parsing
+numpy==2.5.1
+sympy==1.14.0
+
+# File extraction / export
+python-docx==1.2.0
+pypdf==6.14.2
+reportlab==5.0.0
+pillow==12.3.0
+
+# Auth
+sqlalchemy>=2.0
+bcrypt>=4.0
+pyjwt>=2.8
+email-validator>=2.1
+python-dotenv>=1.0
+
+# Dev / tests
+pytest==9.1.1
+
+google-auth>=2.28
+requests>=2.31
