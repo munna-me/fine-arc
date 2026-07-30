@@ -2,7 +2,10 @@
 // should call apiFetch instead of the raw fetch() API so the auth token and
 // 401 handling stay consistent across the app.
 
-export const API_BASE = 'http://localhost:8000/api';
+// In production, set VITE_API_URL to your deployed backend's URL (e.g.
+// https://fine-arc.onrender.com/api) as an environment variable on Vercel.
+// Falls back to localhost so local development keeps working unchanged.
+export const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 
 const TOKEN_KEY = 'finearc_token';
 
