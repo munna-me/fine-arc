@@ -6,7 +6,6 @@ interpolation, integration, and ODEs — with charts and a downloadable Word/PDF
 report.
 
 **Live app:** https://fine-arc.vercel.app
-**API:** https://fine-arc.onrender.com/api
 
 ---
 
